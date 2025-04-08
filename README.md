@@ -28,7 +28,7 @@ This README explains:
 1. SingleProcessMain.java (Main Class)
 Purpose: This is the entry point of the application.
 
-## Responsibilities:
+- Responsibilities:
 
 Initializes two Player instances.
 Starts the communication by making one player the initiator.
@@ -38,7 +38,7 @@ Ensures that the program terminates gracefully after 10 exchanges.
 2. Player.java (Player Class)
 Purpose: Represents an individual player who can send and receive messages.
 
-## Responsibilities:
+- Responsibilities:
 
 Stores the player’s name.
 Sends a message with a counter (e.g., "Hello from Client [1]").
@@ -48,7 +48,7 @@ Keeps track of message history.
 3. Server.java (Message Coordinator)
 Purpose: Acts as a simple message broker between players.
 
-## Responsibilities:
+- Responsibilities:
 
 Receives messages from players.
 Ensures the received message is forwarded to the correct recipient.
@@ -57,7 +57,7 @@ Maintains the message sequence to meet the assignment rules.
 4. Client.java (Player Simulation)
 Purpose: Simulates how a player behaves when sending and receiving messages.
 
-## Responsibilities:
+- Responsibilities:
 
 Starts communication with another player.
 Logs received messages.
@@ -67,7 +67,7 @@ Ensures the stop condition (10 messages exchanged) is met.
 5. start.bat (Windows Run Script)
 Purpose: Provides an easy way to start the application on Windows.
 
-## Responsibilities:
+- Responsibilities:
 
 Compiles and runs the Java application in a single command.
 Ensures the classpath is correctly set.
